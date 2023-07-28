@@ -1,8 +1,14 @@
-import Main from ".";
+import type { Meta, Story } from '@storybook/nextjs';
+import Main from '.';
 
-export default {
-  title: 'Main',
-  component: Main
-}
+const meta: Meta = {
+  component: Main,
+  args: {
+    title: 'React Avançado',
+    description: 'TypeScript, ReactJS, NextJS e Styled Components'
+  }
+};
 
-export const Basic = ()=> <Main />
+export default meta;
+
+export const Basic: Story = (args) => <Main {...args} />;
