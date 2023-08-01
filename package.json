@@ -10,8 +10,8 @@
     "prepare": "husky install",
     "test": "jest",
     "test:watch": "yarn test --watch",
-    "storybook": "storybook dev -p 6006 -s ../public/img",
-    "build-storybook": "storybook build -s ../public/img"
+    "storybook": "storybook dev -s ../public -p 6006 ",
+    "build-storybook": "storybook build -s ./public"
   },
   "lint-staged": {
     "src/**/*": [
