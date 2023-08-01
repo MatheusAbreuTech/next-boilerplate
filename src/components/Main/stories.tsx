@@ -1,7 +1,11 @@
-import type { Meta, Story } from '@storybook/nextjs';
 import Main from '.';
 
-const meta: Meta = {
+type argsType = {
+  title: string;
+  description: string;
+};
+
+export default {
   component: Main,
   args: {
     title: 'React Avançado',
@@ -9,6 +13,4 @@ const meta: Meta = {
   }
 };
 
-export default meta;
-
-export const Basic: Story = (args) => <Main {...args} />;
+export const Basic = (args: argsType) => <Main {...args} />;
